@@ -5,13 +5,15 @@
     <h1>TABUADA</h1>
     <h5>Digite o valor que deseja Multiplicar</h5>
 
-        <form action="Tabuada.php" method="post">			<!-- criar um formulário em HTML passando qual arquivo .php  -->
+        <form action="Tabuada.php" method="$_POST">			<!-- criar um formulário em HTML passando qual arquivo .php  -->
             <input type="text" name="Num" size="1">			<!-- aqui é criado o campo para insersão do número do tipo texto -->
             <input type="submit" name="Submit" value="OK">	<!-- aqui é criado o botão com o label "valor"  -->
         </form>
     
 		<?php
 		
+			  //ESCOPO GLOBAL: É o contexto aonde ela foi definida
+
 			global $resultado;
 			global $contador;
 			global $limite;
@@ -19,7 +21,13 @@
 
 					function tabuada()	{
 						
-						$num = $_REQUEST['Num'] ?? 0;
+						
+						$num = $_GET['Num'] ?? 0;
+
+						if ($num == null){
+							require 'Tabuada.php';
+						}
+
 						echo "<BR>";
 						echo "A tabuada do {$num} é"; 
 						echo "<BR>";
