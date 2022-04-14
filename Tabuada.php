@@ -5,9 +5,9 @@
     <h1>TABUADA</h1>
     <h5>Digite o valor que deseja Multiplicar</h5>
 
-        <form action="Tabuada.php" method="post">                    	<!-- criar um formulário em HTML passando qual arquivo .php  -->
-            <input type="text" name="Num" size="1">    					<!-- aqui é criado o campo para insersão do número do tipo texto -->
-            <input type="submit" name="Submit" value="OK">              <!-- aqui é criado o botão com o label "valor"  -->
+        <form action="Tabuada.php" method="post">			<!-- criar um formulário em HTML passando qual arquivo .php  -->
+            <input type="text" name="Num" size="1">			<!-- aqui é criado o campo para insersão do número do tipo texto -->
+            <input type="submit" name="Submit" value="OK">	<!-- aqui é criado o botão com o label "valor"  -->
         </form>
     
 		<?php
