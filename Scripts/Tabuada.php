@@ -24,8 +24,9 @@
 						
 						$num = $_GET['Num'] ?? 0;
 
-						if ($num == null){
-							require 'Tabuada.php';
+						if (empty($_GET['Num'])){ //Se a variável $num não tiver valor nenhum, atribui-se a ela o valor 0
+						//	require 'Tabuada.php'; 
+							$num = 0; 
 						}
 
 						echo "<BR>";
