@@ -44,7 +44,7 @@
 						}
 				}
 			echo tabuada();
-		
+		//Odair
 		?>
 
 	</div>
