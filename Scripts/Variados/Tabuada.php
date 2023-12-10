@@ -2,7 +2,7 @@
 
     <div align = "center">
 
-    <h1>TABUADA</h1>
+    <h1>TABUADA!</h1>
     <h5>Digite o valor que deseja Multiplicar</h5>
 
         <form action="Tabuada.php" method="$_POST">			<!-- criar um formulário em HTML passando qual arquivo .php  -->
